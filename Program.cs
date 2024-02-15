@@ -1,5 +1,5 @@
 ﻿
-string[] arr = new string[6] {"257", "45", "hello", "world", "res","456"};
+string[] arr = new string[6] {"2557", "45", "hello", "world", "res","456"};
 
 string[] getArr (string[] arr)
 {
@@ -21,9 +21,12 @@ void PrintArray(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        System.Console.Write($"{arr[i]},");
+        Console.Write($"{arr[i]},");
     }
     Console.WriteLine();
 }
 
+Console.WriteLine("Входной массив:");
+PrintArray(arr);
+Console.WriteLine("Результат:");
 PrintArray(getArr(arr));
